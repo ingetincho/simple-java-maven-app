@@ -27,6 +27,6 @@ echo 'application (which Jenkins built using Maven) to the Jenkins UI.'
 set -x
 cd target
 FILE=${NAME}-${VERSION}.jar
-chmod +rwx FILE
+chmod +rwx "$FILE"
 java -jar my-app-1.0-SNAPSHOT.jar
 
